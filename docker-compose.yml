@@ -1,0 +1,13 @@
+services:
+  agent-pm:
+    image: oven/bun:1.4.0
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    ports:
+      - "3000:3000"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      DATABASE_PATH: /workspace/data/agent-pm.sqlite
+    command: ["bun", "run", "--cwd", "apps/server", "dev"]

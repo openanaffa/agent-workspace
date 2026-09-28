@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-6",
+  "mcp": {
+    "agent-lab-tools": {
+      "type": "stdio",
+      "command": "bun",
+      "args": ["mcp-servers/tools.ts"],
+      "description": "Local MCP server: read_file, write_file, run_python (uv), calculate, save_skill, list_skills"
+    }
+  },
+  "instructions": "AGENTS.md"
+}

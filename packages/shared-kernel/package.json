@@ -1,0 +1,1 @@
+{ "name": "@workspace/shared-kernel", "version": "0.0.1", "module": "src/index.ts" }

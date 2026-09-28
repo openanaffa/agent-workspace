@@ -1,0 +1,5 @@
+{
+  "name": "@agent-pm/protocol",
+  "private": true,
+  "type": "module"
+}

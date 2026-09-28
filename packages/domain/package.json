@@ -1,0 +1,5 @@
+{
+  "name": "@agent-pm/domain",
+  "private": true,
+  "type": "module"
+}

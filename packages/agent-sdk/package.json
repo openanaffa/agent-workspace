@@ -1,0 +1,4 @@
+{ "name": "@workspace/agent-sdk", "version": "0.0.1", "module": "src/index.ts",
+  "dependencies": { "@workspace/shared-kernel": "workspace:*", "@workspace/rag": "workspace:*",
+    "@workspace/memory": "workspace:*", "@workspace/context-compression": "workspace:*",
+    "ai": "latest" } }

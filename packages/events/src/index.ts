@@ -1,0 +1,15 @@
+export const EVENT_TYPES = {
+  PROJECT_CREATED: "project.created",
+  PROJECT_UPDATED: "project.updated",
+  TASK_CREATED: "task.created",
+  TASK_STATUS_CHANGED: "task.status_changed",
+  AGENT_REGISTERED: "agent.registered",
+  AGENT_HEARTBEAT: "agent.heartbeat",
+  MESSAGE_POSTED: "message.posted",
+  PROPOSAL_CREATED: "proposal.created",
+  VOTE_CAST: "vote.cast",
+  DECISION_REACHED: "decision.reached",
+  BUDGET_CHARGED: "budget.charged",
+  RUN_STARTED: "run.started",
+  RUN_FINISHED: "run.finished",
+} as const;

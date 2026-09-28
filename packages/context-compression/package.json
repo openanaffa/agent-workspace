@@ -1,0 +1,2 @@
+{ "name": "@workspace/context-compression", "version": "0.0.1", "module": "src/index.ts",
+  "dependencies": { "@workspace/shared-kernel": "workspace:*" } }

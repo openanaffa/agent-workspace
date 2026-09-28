@@ -1,0 +1,5 @@
+{
+  "name": "@agent-pm/sdk",
+  "private": true,
+  "type": "module"
+}

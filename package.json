@@ -1,0 +1,33 @@
+{
+  "name": "agent-workspace",
+  "version": "0.1.0",
+  "description": "ACP + A2A + MCP multi-agent experiment — Hermes + OpenCode stack",
+  "type": "module",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build":     "bun run --filter '*' build",
+    "dev":       "bun run --filter '*' dev",
+    "typecheck": "bun run --filter '*' typecheck",
+    "graft":     "bunx graft .",
+    "index-rag": "uv run services/rag-indexer/src/main.py",
+    "dev:server": "bun run --cwd apps/server dev",
+    "test": "bun test",
+    "check": "bun run --cwd apps/server check",
+    "orchestrator": "bun agents/orchestrator.ts",
+    "coder": "bun agents/coder-agent.ts",
+    "researcher": "bun agents/researcher-agent.ts",
+    "mcp": "bun mcp-servers/tools.ts",
+    "acp-bridge": "bun agents/acp-bridge.ts",
+    "demo": "bun scripts/demo.ts",
+    "dev:agents": "concurrently \"bun run coder\" \"bun run researcher\" \"bun run mcp\""
+  },
+  "dependencies": {
+    "@a2a-js/sdk": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

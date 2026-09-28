@@ -1,0 +1,5 @@
+{
+  "name": "@agent-pm/test-utils",
+  "private": true,
+  "type": "module"
+}

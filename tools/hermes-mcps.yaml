@@ -1,0 +1,9 @@
+mcps:
+  - { name: mempalace,  command: "bunx mempalace-mcp",                  transport: stdio }
+  - { name: openviking, command: "bunx openviking-mcp",                 transport: stdio }
+  - { name: obsidian,   command: "bunx obsidian-mcp --vault ~/notes",   transport: stdio }
+  - { name: rtk-icm,   command: "icm serve",                            transport: stdio }
+  - { name: headroom,   command: "headroom mcp-server",                 transport: stdio,
+      env: { HEADROOM_COMPRESSION_RATIO: "0.8" } }
+  - { name: opensrc,    command: "opensrc mcp-server",                  transport: stdio,
+      env: { OPENSRC_CACHE_DIR: "~/.cache/opensrc" } }

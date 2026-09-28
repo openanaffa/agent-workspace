@@ -1,0 +1,24 @@
+[tools]
+bun = "latest"
+uv = "latest"
+docker-cli = "latest"
+
+[tasks.dev]
+run = "bun run --cwd apps/server dev"
+
+[tasks.test]
+run = "bun test"
+
+[tasks.check]
+run = "bun run check"
+
+[tasks.python-test]
+run = "uv run --project python pytest"
+
+[tasks.db]
+run = "bun run --cwd apps/server db:init"
+
+[tasks.all]
+depends = ["check", "test", "python-test"]
+[env]
+HERMES_HOME = "~/.hermes"

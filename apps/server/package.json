@@ -1,0 +1,11 @@
+{
+  "name": "@agent-pm/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/main.ts",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "db:init": "bun src/db-init.ts"
+  },
+  "dependencies": {}
+}
